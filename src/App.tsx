@@ -5,20 +5,15 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+        let [tasks, setTasks] = useState<Array<TasksType>>(
+        [
+        {id: v1(), title: "HTML", isDone: true},
+        {id: v1(), title: "React", isDone: true},
+        {id: v1(), title: "Js", isDone: false},
+        {id: v1(), title: "Rest API", isDone: false},
+        {id: v1(), title: "GraphQL", isDone: false}
+
     </div>
   );
 }
