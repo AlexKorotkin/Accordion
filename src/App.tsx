@@ -5,6 +5,7 @@ import './App.css';
 function App() {
     return (
         <div className="App">
+            <AppTitle/>
             <Rating/>
             <Accordion/>
         </div>
@@ -22,25 +23,40 @@ function Rating() {
 
     )
 }
-function Accordion(){
+function Accordion() {
     return (
         <div>
-            <h3>Меню</h3>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
+            <AccordionTitle/>
+            <AccordionBody/>
         </div>
+
     )
 }
 
-function Star(){
+function Star() {
     return (
         <div>
             <span>Star</span>
         </div>
     )
 }
+function AppTitle() {
+    return <>Какой-то текст</>
+}
+function AccordionTitle() {
+    return (
+        <h3>Меню</h3>
+    )
+}
+function AccordionBody() {
+    return (
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    )
+}
+
 
 export default App;
