@@ -6,3 +6,20 @@
 span {
   color: red;
 }
+.item {
+  margin: 1px;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid black;
+}
+.item.round {
+  padding: 7px;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: red;
+}
+.green {
+  background-color: darkgreen;
+}
