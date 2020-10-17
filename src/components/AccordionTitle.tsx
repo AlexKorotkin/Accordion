@@ -1,6 +1,7 @@
 import React from 'react';
 type AccordionTitleType = {
     title: string
+
 }
 export function AccordionTitle(props: AccordionTitleType) {
     return (
