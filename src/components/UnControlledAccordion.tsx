@@ -5,14 +5,15 @@ type UncontrolledAccordionPropsType = {
     titleValue: string
 
 }
+/*
 export function UncontrolledAccordion(props: UncontrolledAccordionPropsType) {
     let [collapsed, setCollapsed] = useState(true);
     let install = () => setCollapsed(!collapsed)
     return (
         <div>
-            <AccordionTitle  title = {props.titleValue}/><button onClick={install}>Toggle</button>
+            <AccordionTitle  title = {props.titleValue} install={install}/>
             {!collapsed && <AccordionBody/>}
         </div>
 
     )
-}
+}*/

@@ -24,7 +24,7 @@ export function Onoff(){
             border: '1px solid black',
             borderRadius: '2px',
             backgroundColor: on ? '' : 'red',
-            color: on ? 'white' : 'black'
+            color: on ? 'black' : 'white'
         }
         const indicatorStyle = {
             margin: '1px',

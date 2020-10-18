@@ -1,36 +1,31 @@
 import React, {useState} from "react";
 
-export type RatingPropsType = {
-    value: 0 | 1 | 2 | 3 | 4 | 5
-}
+
 
 type StarPropsType = {
     selected: boolean
-}
+    starValue: () => void
 
+}
 
 
 export function UncontrolledRating() {
     let [value, setValue] = useState(0)
-    return (
+       return (
         <div>
-            <Star selected={value > 0}/> <button onClick={()=>{setValue(1)}}>x</button>
-            <Star selected={value > 1}/><button onClick={()=>{setValue(2)}}>x</button>
-            <Star selected={value > 2}/><button onClick={()=>{setValue(3)}}>x</button>
-            <Star selected={value > 3}/><button onClick={()=>{setValue(4)}}>x</button>
-            <Star selected={value > 4}/><button onClick={()=>{setValue(5)}}>x</button>
+            <Star selected={value > 0} starValue={() => {setValue(1)}} />
+            <Star selected={value > 1} starValue={() => {setValue(2)}} />
+            <Star selected={value > 2} starValue={() => {setValue(3)}} />
+            <Star selected={value > 3} starValue={() => {setValue(4)}} />
+            <Star selected={value > 4} starValue={() => {setValue(5)}} />
         </div>
     )
 
 }
 
-
 function Star(props: StarPropsType) {
-    if (props.selected) {
-        return <span><b>Star </b></span>
-    } else {
-        return <span>Star </span>
-    }
 
-
+    return <span onClick={()=>{props.starValue()
+    }}>{props.selected ? <img src="https://c.radikal.ru/c36/2010/01/8b16e369f6a7.png" alt="logo"/> :
+        <img src="https://b.radikal.ru/b08/2010/97/884fcf53c9b2.png" alt="logo"/>}</span>
 }
