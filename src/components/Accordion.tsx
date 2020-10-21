@@ -4,7 +4,7 @@ import {AccordionBody} from "./AccordionBody";
 type AccordionPropsType = {
     titleValue: string
     collapsed: boolean
-    seAccordionCollapsed: ()=> void
+    seAccordionCollapsed: (value: boolean)=> void
 }
 export function Accordion(props: AccordionPropsType) {
     return (
