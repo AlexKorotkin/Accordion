@@ -16,13 +16,13 @@ function App() {
     return (
         <div className="App">
             <PageTitle title={"This is APP components"}/>
-            {/*<Accordion titleValue={'Меню'} collapsed={true}/>*/}
+
             <Accordion titleValue={'Меню2'} collapsed={accordionCollapsed} seAccordionCollapsed={seAccordionCollapsed}/>
-            {/*<UncontrolledAccordion titleValue={'UncontrolledMenu'}/>*/}
+
             <UncontrolledRating/>
             <Rating value={ratingValue} onClick={setRatingValue}/>
              <Onoff on ={on} setOn = {setOn}/>
-            <UnControlledOnoff/>
+
         </div>
     );
 }
