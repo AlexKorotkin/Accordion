@@ -34,11 +34,12 @@ export function UnControlledOnoff(){
             borderRadius: '50%',
             backgroundColor: on ? 'green' : 'red'
         }
-
+        let onClicked = () => {setOn(true)}
+        let offClicked = () => {setOn(false)}
     return (
         <div>
-            Uncontroll<button onClick={() => {setOn(true)}} style={onStyle}>ON</button>
-            <button onClick={() => {setOn(false)}} style={offStyle}>OFF</button>
+            Uncontroll<button onClick={onClicked} style={onStyle}>ON</button>
+            <button onClick= {offClicked} style={offStyle}>OFF</button>
             <div style={indicatorStyle}></div>
         </div>
 

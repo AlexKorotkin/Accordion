@@ -37,7 +37,7 @@ export function Onoff(props: OnoffPropsType){
 
     return (
         <div>
-             controll<button onClick={() => {props.setOn(true)}} style={onStyle}>ON</button>
+             <button onClick={() => {props.setOn(true)}} style={onStyle}>ON</button>
             <button onClick={() => {props.setOn(false)}} style={offStyle}>OFF</button>
             <div style={indicatorStyle}></div>
         </div>
