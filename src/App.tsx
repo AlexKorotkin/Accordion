@@ -1,10 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
-import {Accordion} from "./components/Accordion";
 import {Rating, RatingValueType} from "./components/Rating/Rating";
-import {UnControlledOnoff} from "./components/OnOf/UnControlledOnoff";
-/*import {UncontrolledAccordion} from "./components/UnControlledAccordion";*/
-import {UncontrolledRating} from "./components/Rating/UncontrolledRating";
 import {Onoff} from "./components/OnOf/Onoff";
 
 function App() {
@@ -18,6 +14,7 @@ function App() {
             <PageTitle title={"This is APP components"}/>
             <Rating value={ratingValue} onClick={setRatingValue}/>
              <Onoff on ={on} setOn = {setOn}/>
+             
         </div>
     );
 }
